@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="bs">
+     <head>
+     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+     <style>
+      #tabela{
+        border-collapse:collapse;
+      }
+      #tabela td{
+       width: 100px;
+       border: 1px solid black;
+      }
+      
+    </style>
+     
+</head>
+<body>
+
+<h1>Spirala4</h1>
+<form >
+  <label for="studenti">Sudenti:</label>
+  <textarea id="studenti" name="studenti">
+  </textarea>
+  <label for="grupa">Grupa:</label>
+  <select id="grupa" name="grupu">
+  </select><br>
+  <input type="button" value="Unesi raspored" onclick="unesiStudenta()" id="btn">
+</form>
+
+<script src="unosStudenta.js"></script>
+</body>
+
+</html>

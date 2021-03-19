@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bs">
+     <head>
+     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+     <style>
+      #tabela{
+        border-collapse:collapse;
+      }
+      #tabela td{
+       width: 100px;
+       border: 1px solid black;
+      }
+      
+    </style>
+     
+</head>
+<body>
+
+<h1>Spirala1</h1>
+<form  oninput="validraj()">
+  <label for="naziv" value="dsafas">Naziv predmeta:</label>
+  <input type="text" id="naziv" name="naziv" value="dsa" ><br>
+  <label for="aktivnost">Aktivnost:</label>
+  <select id="aktivnost" name="aktivnost">
+    <option value="predavanje">Predavanje</option>
+    <option value="vjezbe">Vjezbe</option>
+  </select><br>
+  <label for="dan">Dan:</label>
+  <select id="dan" name="dan">
+    <option value="ponedjeljak">Ponedjeljak</option>
+    <option value="utorak">Utorak</option>
+    <option value="srijeda">Srijeda</option>
+    <option value="cetvrtak">Cetvrtak</option>
+    <option value="petak">Petak</option>
+  </select><br>
+  <label for="timePocetka">Vrijeme početka:</label>
+  <input type="time" id="timePocetka" name="timePocetka" oninput="vali()"><br>
+  <label for="timeKraja">Vrijeme kraja:</label>
+  <input type="time" id="timeKraja" name="timeKraja"  oninput="vali()" ><br>
+  <input type="button" value="Unesi raspored" onclick="unos()" id="btn">
+
+</form>
+
+
+<p>Lista predeta-aktivnosti</p>
+<ul id="predmeti">
+</ul>
+
+
+<script src="unosRasporeda.js"></script>
+
+</body>
+
+</html>
